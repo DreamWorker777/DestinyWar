@@ -16,13 +16,13 @@ export const topMenu = () => {
                     <Link to="/inventory">INVENTORY</Link>
                 </div>
                 <div className="topMenu__menus__item">
-                    <a href="#javascript;">WHITEPAPER</a>
+                    <a href="https://destinywar.org/trial/DestinyWar.pdf" target="_blank">WHITEPAPER</a>
                 </div>
                 <div className="topMenu__menus__item">
-                    <a href="#javascript;">GAME-WIKIPEDIA</a>
+                    <Link to="/wikipedia">GAME-WIKIPEDIA</Link>
                 </div>
                 <div className="topMenu__menus__item">
-                    <a href="#javascript;">MARKETPLACE</a>
+                    <Link to="/marketplace">MARKETPLACE</Link>
                 </div>
             </div>
 
@@ -33,9 +33,9 @@ export const topMenu = () => {
                 <div className="topMenu__dropDownMenu__content">
                     <Link to="/">HOME</Link>
                     <Link to="/inventory">INVENTORY</Link>
-                    <a href="#javascript;">WHITEPAPER</a>
-                    <a href="#javascript;">GAME-WIKIPEDIA</a>
-                    <a href="#javascript;">MARKETPLACE</a>
+                    <a href="https://destinywar.org/trial/DestinyWar.pdf" target="_blank">WHITEPAPER</a>
+                    <Link to="/wikipedia">GAME-WIKIPEDIA</Link>
+                    <Link to="/marketplace">MARKETPLACE</Link>
                 </div>
             </div>
 
