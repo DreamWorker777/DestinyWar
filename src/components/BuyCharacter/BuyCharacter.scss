@@ -1,0 +1,281 @@
+.buyCharacter {
+    margin-top: 50px;
+    text-align: center;
+
+    &__title {
+        img {
+            width: 720px;
+        }
+    }
+
+    &__content {
+        margin-top: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__character {
+            width: 330px;
+
+            img {
+                width: 90%;
+            }
+        }
+
+        &__main {
+            width: 530px;
+            background-size:cover;
+            background-repeat:no-repeat;
+            height:820px;
+
+            &__desc {
+                p {
+                    margin-top:2%;
+                    margin-left:3%;
+                    font-size:20px;
+                    text-align:center;
+                    padding-top:30px;
+                }
+            }
+
+            &__one {
+                img {
+                    width: 25%;
+                }
+
+                span {
+                    font-size: 35px;
+                }
+
+                .price {
+                    border:5px solid #00B8C6;
+                    border-radius:50px;
+                    width:300px;
+                    height:60px;
+                    background:#003D50;
+
+                    color:yellow;
+                    line-height:56px;
+                    font-size:43px;
+                    font-weight:600;
+
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10px;
+                }
+
+                button {
+                    margin-top: 20px;
+
+                    width: 30%;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                margin-bottom: 50px;
+            }
+
+            &__total {
+                &__title {
+                    font-size: 38px;
+                }
+
+                &__progress {
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    margin-top: 10px;
+
+                    height:50px;
+                    background-color:#FFF400;
+                    border-radius:25px;
+
+                    display: flex;
+                    overflow: hidden;
+
+                    div {
+                        width:40%;
+                        height: 100%;
+                        background-color:#003D50;
+                        font-size:21px;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        overflow: hidden;
+                        color: white;
+                        white-space: nowrap;
+
+                        transition: width .6s ease;
+                    }
+                }
+            }
+        }
+
+        &__special {
+            width: 330px;
+            text-align: center;
+
+            &__item {
+                &__pic {
+                    img {
+                        width: 274px;
+                    }
+                }
+
+                &__price {
+                    border:5px solid #00B8C6;
+                    border-radius:50px;
+                    width:180px;
+                    height:50px;
+                    background:#003D50;
+
+                    color:yellow;
+                    font-size:32px;
+                    font-weight:600;
+
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &__buyBtn {
+                    margin-top: 10px;
+                    img {
+                        width: 170px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .buyCharacter {
+        padding-left: 3%;
+        padding-right: 3%;
+
+        &__content {
+            &__special {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin-top: 5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .buyCharacter {
+        &__title {
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .buyCharacter {
+        margin-top: 8.3vw;
+
+        &__content {
+            margin-top: 8.3vw;
+    
+            &__character {
+                width: 55vw;
+    
+                img {
+                    width: 90%;
+                }
+            }
+    
+            &__main {
+                width: 88.3vw;
+                height: 136.6vw;
+    
+                &__desc {
+                    p {
+                        font-size: 3.3vw;
+                        padding-top: 5vw;
+                    }
+                }
+    
+                &__one {
+    
+                    span {
+                        font-size: 6vw;
+                    }
+    
+                    .price {
+                        border:0.9vw solid #00B8C6;
+                        border-radius: 9vw;
+                        width: 50vw;
+                        height: 10vw;
+    
+                        line-height: 9.3vw;
+                        font-size: 7vw;
+                        
+                        margin-top: 1.7vw;
+                    }
+    
+                    button {
+                        margin-top: 3.3vw;
+                    }
+    
+                    margin-bottom: 8.3vw;
+                }
+    
+                &__total {
+                    &__title {
+                        font-size: 6.3vw;
+                    }
+    
+                    &__progress {
+                        margin-left: 8.3vw;
+                        margin-right: 8.3vw;
+                        margin-top: 1.7vw;
+    
+                        height: 8.3vw;
+                        border-radius: 4.1vw;
+    
+                        div {
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
+            }
+    
+            &__special {    
+                &__item {
+                    &__pic {
+                        img {
+                            width: 45.6vw;
+                        }
+                    }
+    
+                    &__price {
+                        border-radius: 8.3vw;
+                        width: 30vw;
+                        height: 8.3vw;
+
+                        font-size: 5.3vw;
+                    }
+    
+                    &__buyBtn {
+                        margin-top: 1.7vw;
+                        img {
+                            width: 28.3vw;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

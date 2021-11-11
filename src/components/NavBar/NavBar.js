@@ -2,8 +2,10 @@ import './NavBar.scss';
 
 export const NavBar = () => {
     return (
-        <section>
-
+        <section className="navBar">
+            <div className="navBar__iconWrapper">
+                
+            </div>
         </section>
     )
 }
