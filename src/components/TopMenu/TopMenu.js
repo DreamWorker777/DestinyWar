@@ -1,3 +1,7 @@
+import {
+    Link
+} from "react-router-dom";
+
 import './TopMenu.scss';
 import metamask from '../../assets/icon/metamask2.png';
 
@@ -9,7 +13,7 @@ export const topMenu = () => {
                     <a href="#javascript;">HOME</a>
                 </div>
                 <div className="topMenu__menus__item">
-                    <a href="#javascript;">INVENTORY</a>
+                    <Link to="/inventory">INVENTORY</Link>
                 </div>
                 <div className="topMenu__menus__item">
                     <a href="#javascript;">WHITEPAPER</a>

@@ -26,6 +26,12 @@ button {
     }
 }
 
+.App {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .container {
     max-width: 1200px;
     margin-left: auto !important;

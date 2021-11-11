@@ -1,5 +1,5 @@
 .roadMap {
-    @keyframes teamAnimate {
+    @keyframes roadMapAnimate {
         0% {
             transform: scale(1.0);
         }
@@ -35,7 +35,7 @@
                     width: 645px;
     
                     &:hover {
-                        animation: teamAnimate 1s infinite linear;
+                        animation: roadMapAnimate 1s infinite linear;
                     }
                 }
             }
