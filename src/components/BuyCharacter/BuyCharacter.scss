@@ -75,7 +75,7 @@
                     }
                 }
 
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
 
             &__total {
@@ -84,31 +84,85 @@
                 }
 
                 &__progress {
-                    margin-left: 50px;
-                    margin-right: 50px;
-                    margin-top: 10px;
-
-                    height:50px;
-                    background-color:#FFF400;
-                    border-radius:25px;
-
                     display: flex;
-                    overflow: hidden;
+                    justify-content: center;
 
-                    div {
-                        width:40%;
-                        height: 100%;
-                        background-color:#003D50;
-                        font-size:21px;
-
+                    margin-top: 20px;
+                    
+                    &__left, &__right {
+                        width: 20%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
-                        overflow: hidden;
-                        color: white;
-                        white-space: nowrap;
+                        align-items: center;
+                        
+                        color: #002f47;
 
-                        transition: width .6s ease;
+                        .description {
+                            font-size: 14px;
+                        }
+
+                        .value {
+                            font-size: 25px;
+                            font-weight: 900;
+                        }
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+
+                    &__right {
+                        img {
+                            width: 45%;
+                        }
+                    }
+
+                    &__bar {
+                        position: relative;
+                        width: 50%;
+                        top: 55px;
+
+                        &__desc {
+                            left: 50%;
+                            transform: translate3d(-50%, 0, 0);
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-size: 14px;
+                            color: white;
+
+                            position: absolute;
+                            top: -65px;
+
+                            padding: 5px;
+                            background: #32c4eb;
+                            border-radius: 10px;
+                            border: 3px solid #12435b;
+
+                            .value {
+                                font-size: 25px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        &__main {
+                            height: 35px;
+                            border-radius: 100vw;
+                            border: 3px solid #666666;
+                            background: #224146;
+                            overflow: hidden;
+
+                            &__current {
+                                width: 50%;
+                                height: 100%;
+    
+                                background: linear-gradient(#45cbf0, #baebf8 , #175a6b);
+    
+                                position: relative;
+                                left: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -229,7 +283,7 @@
                         margin-top: 3.3vw;
                     }
     
-                    margin-bottom: 8.3vw;
+                    margin-bottom: 5vw;
                 }
     
                 &__total {
@@ -237,16 +291,40 @@
                         font-size: 6.3vw;
                     }
     
-                    &__progress {
-                        margin-left: 8.3vw;
-                        margin-right: 8.3vw;
-                        margin-top: 1.7vw;
+                    &__progress {    
+                        margin-top: 3.3vw;
+                        
+                        &__left, &__right {    
+                            .description {
+                                font-size: 2.3vw;
+                            }
     
-                        height: 8.3vw;
-                        border-radius: 4.1vw;
+                            .value {
+                                font-size: 4.1vw;
+                            }
+                        }
     
-                        div {
-                            font-size: 3.5vw;
+                        &__bar {
+                            top: 9.1vw;
+    
+                            &__desc {
+                                font-size: 2.3vw;
+
+                                top: -10.8vw;
+    
+                                padding: 0.83vw;
+                                border-radius: 1.6vw;
+                                border: 0.5vw solid #12435b;
+    
+                                .value {
+                                    font-size: 4.17vw;
+                                }
+                            }
+    
+                            &__main {
+                                height: 5.9vw;
+                                border: 0.5vw solid #666666;
+                            }
                         }
                     }
                 }

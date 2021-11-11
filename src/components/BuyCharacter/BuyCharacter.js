@@ -8,6 +8,9 @@ import mount from '../../assets/img/mount.png';
 import pet from '../../assets/img/pet.png';
 import one from '../../assets/img/one.png';
 
+import eggs from '../../assets/img/eggs.png';
+import egg from '../../assets/img/egg.png';
+
 export const BuyCharacter = () => {
     return (
         <section className="buyCharacter container">
@@ -49,8 +52,39 @@ export const BuyCharacter = () => {
                         </div>
 
                         <div className="buyCharacter__content__main__total__progress">
-                            <div>
-                                20000
+                            <div className="buyCharacter__content__main__total__progress__left">
+                                <span className="description">
+                                    TOTAL MENTOS:
+                                </span>
+
+                                <span className="value">
+                                    50K
+                                </span>
+
+                                <img src={eggs} alt='pic'></img>
+                            </div>
+
+                            <div className="buyCharacter__content__main__total__progress__bar">
+                                <div className="buyCharacter__content__main__total__progress__bar__desc">
+                                    <span className="description">MINTED MENTOS</span>
+                                    <span className="value">25088</span>
+                                </div>
+                                
+                                <div className="buyCharacter__content__main__total__progress__bar__main">
+                                    <div className="buyCharacter__content__main__total__progress__bar__main__current"></div>
+                                </div>
+                            </div>
+
+                            <div className="buyCharacter__content__main__total__progress__right">
+                                <span className="description">
+                                    TOTAL LEFT:
+                                </span>
+
+                                <span className="value">
+                                    24912
+                                </span>
+
+                                <img src={egg} alt='pic'></img>
                             </div>
                         </div>
                     </div>
