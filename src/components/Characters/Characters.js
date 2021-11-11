@@ -24,7 +24,7 @@ export const Characters = () => {
         }, 1000);
 
         setInter(timeInterval);
-    });
+    }, [inter]);
 
     return (
         <section className="characters container">

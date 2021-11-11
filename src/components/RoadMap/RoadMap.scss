@@ -1,4 +1,19 @@
 .roadMap {
+    @keyframes teamAnimate {
+        0% {
+            transform: scale(1.0);
+        }
+        25% {
+            transform: scale(1.1);
+        }
+        75% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
     &__title {
         text-align: center;
         color:cyan;
@@ -11,38 +26,65 @@
 
     &__content {
         &__item {
-            margin-bottom: 100px;
-            display: flex;
-            
-            img {
-                width: 645px;
+            margin-bottom: 10px;
+
+            div {
+                width: 100%;
+
+                img {
+                    width: 645px;
+    
+                    &:hover {
+                        animation: teamAnimate 1s infinite linear;
+                    }
+                }
             }
         }
 
         .toLeft {
-            justify-content: flex-start;
+            text-align: left;
         }
 
         .toRight {
-            justify-content: flex-end;
+            text-align: right;
         }
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     .roadMap {
-        padding: 0 3%;
+        padding: 0 20%;
+        
+        &__content {
+            &__item {
+                div {
+                    img {
+                        width: 400px;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 768px) {
     .roadMap {
+        padding: 0 5%;
+
         &__content {
             &__item {
                 margin-bottom: 5vw;
 
-                img {
+                div {
                     width: 100%;
+
+                    img {
+                        width: 100%;
+
+                        &:hover {
+                            animation: none;
+                        }
+                    }
                 }
             }
         }

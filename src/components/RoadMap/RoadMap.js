@@ -19,8 +19,10 @@ export const RoadMap = () => {
             <div className="roadMap__content">
                 {
                     roadMapImages.map((item, index) => (
-                        <div className={`roadMap__content__item ${ index % 2 == 0 ? 'toLeft' : 'toRight' }`} key={index}>
-                            <img alt="pic" src={item.default}></img>
+                        <div className={`roadMap__content__item ${ index % 2 === 0 ? 'toLeft' : 'toRight' }`} key={index}>
+                            <div>
+                                <img alt="pic" src={item.default}></img>
+                            </div>
                         </div>
                     ))
                 }
