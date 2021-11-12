@@ -1,0 +1,22 @@
+export const ROUTERS = {
+    DASHBOARD: "/",
+}
+
+export const ENVS = {
+    // Ethereum Mainnet
+    // CONTRACT_ADDRESS: "0xD89eC63fa64a188db6E66E77F9681d9BcC77AAc1",
+    // CHAIN_ID: "0x1",
+
+    // Rinkeby Testnet
+    CHARACTER_ADDRESS: "0x65691bce628122a261D299411DB3e5d032d937D2",
+    MOUNT_ADDRESS: "0x03D8fe81beCb5a08aBD8A03EcD836570ADed2Fb0",
+    PET_ADDRESS: "0x08c7c18A84132700939c23b3A59245fb423d68a3",
+    CHAIN_ID: "0x4",
+ 
+
+
+    //Kovan Testnet
+    // CONTRACT_ADDRESS : "0x9238c202C55d3dAE6dC8d645F7a78c57683A8bcc",
+    // CHAIN_ID : "42",
+
+}
