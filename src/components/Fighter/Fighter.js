@@ -20,9 +20,6 @@ export const Fighter = () => {
                         practice immortal arts must have superior qualities as well as a firm mind if they want to achieve true results.. 
                     </p>
                 </div>
-                <div className="fighter__desc__youtube" style={{ backgroundImage: `url('${youtubeframe}')` }}>
-                    <iframe src="https://www.youtube.com/embed/eKHr28voKa8" title="youtube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
             </div>
 
             <div className="fighter__pic">

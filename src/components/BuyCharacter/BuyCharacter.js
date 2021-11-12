@@ -5,7 +5,9 @@ import character from '../../assets/img/character.gif';
 import buyframe from '../../assets/img/buycharframe.png';
 import buyButton from '../../assets/img/buybutton.png';
 import mount from '../../assets/img/mount.png';
+import mount_gif from '../../assets/img/Egg.gif';
 import pet from '../../assets/img/pet.png';
+import pet_gif from '../../assets/img/pet.gif';
 import one from '../../assets/img/one.png';
 
 import eggs from '../../assets/img/eggs.png';
@@ -94,6 +96,7 @@ export const BuyCharacter = () => {
                     <div className="buyCharacter__content__special__item">
                         <div className="buyCharacter__content__special__item__pic">
                             <img alt="pic" src={mount}></img>
+                            <img alt="pic" src={mount_gif} className="buyCharacter__content__special__item__pic__gif"></img>
                         </div>
 
                         <div className="buyCharacter__content__special__item__price">
@@ -108,6 +111,7 @@ export const BuyCharacter = () => {
                     <div className="buyCharacter__content__special__item">
                         <div className="buyCharacter__content__special__item__pic">
                             <img alt="pic" src={pet}></img>
+                            <img alt="pic" src={pet_gif} className="buyCharacter__content__special__item__pic__gif"></img>
                         </div>
 
                         <div className="buyCharacter__content__special__item__price">

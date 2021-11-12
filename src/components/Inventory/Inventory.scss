@@ -1,4 +1,19 @@
 .inventory {
+    @keyframes inventoryAnimate {
+        0% {
+            transform: scale(1.0);
+        }
+        25% {
+            transform: scale(1.1);
+        }
+        75% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
     padding: 0 100px;
     color: #002f47;
     min-height: calc(100vh - 253px);
@@ -15,6 +30,16 @@
         justify-content: space-between;
         margin: 100px 0;
         flex-wrap: wrap;
+
+        &__dwar, &__mount, &__pet {
+            &:hover {
+                animation: inventoryAnimate 1s infinite linear;
+            }
+
+            span {
+                font-family: AgencyFB;
+            }
+        }
 
         &__dwar {
             width: 420px;

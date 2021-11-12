@@ -25,6 +25,8 @@
     }
 
     &__content {
+        padding: 0 250px;
+
         &__item {
             margin-bottom: 10px;
 
@@ -53,8 +55,6 @@
 
 @media (max-width: 1440px) {
     .roadMap {
-        padding: 0 20%;
-        
         &__content {
             &__item {
                 div {
@@ -63,6 +63,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .roadMap {
+        &__content {
+            padding: 0 10%;
         }
     }
 }

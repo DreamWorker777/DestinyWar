@@ -4,6 +4,12 @@
 		 url('./assets/font/BRLNSR.TTF') format('truetype'), /* Super Modern Browsers */
 }
 
+@font-face {
+	font-family: 'AgencyFB';
+	src: local('AgencyFB'),
+		 url('./assets/font/agency-fb_[allfont.net].ttf') format('truetype'), /* Super Modern Browsers */
+}
+
 a {
     text-decoration: unset;
     color: white;

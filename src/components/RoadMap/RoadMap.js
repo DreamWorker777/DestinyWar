@@ -11,7 +11,7 @@ for( let i = 1; i <= imageCount ; i ++ ) {
 
 export const RoadMap = () => {
     return (
-        <section className="roadMap container">
+        <section className="roadMap">
             <div className="roadMap__title">
                 ROADMAP
             </div>
