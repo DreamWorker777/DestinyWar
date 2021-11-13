@@ -109,7 +109,7 @@ function App() {
           "This address is not allowed to mint that many during the presale!"
         );
       } else if (status.indexOf("already minted") > 0) {
-        NotificationManager.info("You have already a Character !");
+        NotificationManager.info("You already have a Character !");
       } else {
         NotificationManager.info("Transaction is failed!");
       }
@@ -148,7 +148,7 @@ function App() {
           "This address is not allowed to mint that many during the presale!"
         );
       } else if (status.indexOf("already minted") > 0) {
-        NotificationManager.info("You have already a Mount !");
+        NotificationManager.info("You already have a Mount !");
       } else {
         NotificationManager.info("Transaction is failed!");
       }
@@ -187,7 +187,7 @@ function App() {
           "This address is not allowed to mint that many during the presale!"
         );
       } else if (status.indexOf("already minted") > 0) {
-        NotificationManager.info("You have already a Pet !");
+        NotificationManager.info("You already have a Pet !");
       } else {
         NotificationManager.info("Transaction is failed!");
       }
