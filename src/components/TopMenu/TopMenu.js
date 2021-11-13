@@ -52,7 +52,7 @@ export const topMenu = ({ walletAddress, onConnectWalletHandler }) => {
       <div className="topMenu__button">
         <button onClick={() => onConnectWalletHandler()}>
           <img src={metamask} alt="pic"></img>
-          {walletAddress === "" ? "Log in" : walletAddress}
+          <span>{walletAddress === "" ? "Log in" : walletAddress}</span>
         </button>
       </div>
     </section>
