@@ -49,7 +49,7 @@ export const BuyCharacter = ({
 					<button 
 						className="buyCharacter__top__one__buyBtn"
 						onClick={() => {
-							if (!mintLoading) onMintPetHandler(1);
+							if (!mintLoading) onMintCharacterHandler(1);
 						}}
 					>
 						<img alt="pic" src={buyButton}></img>
@@ -97,7 +97,7 @@ export const BuyCharacter = ({
 					<button 
 						className="buyCharacter__special__item__buyBtn"
 						onClick={() => {
-							if (!mintLoading) onMintPetHandler(1);
+							if (!mintLoading) onMintMountHandler(1);
 						}}
 					>
 						<img alt="pic" src={buyButton}></img>
@@ -127,10 +127,10 @@ export const BuyCharacter = ({
 							<div className="buyCharacter__total__progress__bar__main__back">
 								<img alt="pic" src={progressBack}></img>
 							</div>
-							<div className="buyCharacter__total__progress__bar__main__progress" style={{ width: `50%` }}>
+							<div className="buyCharacter__total__progress__bar__main__progress" style={{ width: `${totalSupply/50000}%` }}>
 								<img alt="pic" src={progressBar}></img>
 							</div>
-							<div className="buyCharacter__total__progress__bar__main__head" style={{ left: `50%` }}>
+							<div className="buyCharacter__total__progress__bar__main__head" style={{ left: `${totalSupply/50000}%` }}>
 								<img alt="pic" src={progressHead}></img>
 							</div>
 						</div>
