@@ -254,3 +254,19 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+	.buyCharacter {
+		&__top {
+			flex-direction: column;
+		}
+
+		&__special {
+			flex-direction: column;
+
+			&__item {
+				margin-bottom: 10vw;
+			}
+		}
+	}
+}
