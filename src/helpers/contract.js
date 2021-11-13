@@ -1,12 +1,14 @@
 import { ethers } from "ethers"
-import contractABI from "./abis/abi.json"
+import characterABI from "./abis/characterAbi.json"
+import mountABI from "./abis/mountAbi.json"
+import petABI from "./abis/petAbi.json"
 import { ENVS } from "./configurations/index"
 
 // Contract can be used to write Contract
 export const getContractWithSigner = (cId = 1) => {
   const infuraProvider = new ethers.providers.Web3Provider(window.ethereum)
   const signer = infuraProvider.getSigner()
-
+  const contractABI = (cId === 1 ? characterABI : (cId === 2 ?  mountABI : petABI))
   let CONTRACT_ADDR = (cId === 1 ? ENVS.CHARACTER_ADDRESS : (cId === 2 ?  ENVS.MOUNT_ADDRESS : ENVS.PET_ADDRESS))
   const contract = new ethers.Contract(
     CONTRACT_ADDR,
@@ -23,7 +25,7 @@ const getContractWithoutSigner = (cId = 1 ) => {
   const infuraProvider = new ethers.providers.Web3Provider(window.ethereum)
 
   let CONTRACT_ADDR = (cId === 1 ? ENVS.CHARACTER_ADDRESS : (cId === 2 ?  ENVS.MOUNT_ADDRESS : ENVS.PET_ADDRESS))
-
+  const contractABI = (cId === 1 ? characterABI : (cId === 2 ?  mountABI : petABI))
   const contract = new ethers.Contract(
     CONTRACT_ADDR,
     contractABI,
